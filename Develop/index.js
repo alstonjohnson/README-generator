@@ -90,10 +90,6 @@ const generateHTML = ({ Title, Description, TableOfContents, Installation, Usage
         <h2>Questions</h2>
         <p>${Questions2}</p>
     </main>
-    <footer>
-        <h4><a href="#"></a></h4>
-        <h4><a href="#"></a></h4>
-    </footer>
 </body>
 </html>`;
 // TODO: Create a function to write README file
