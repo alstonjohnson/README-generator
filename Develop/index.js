@@ -66,14 +66,20 @@ const createHTML = ({ Title, Description, TableOfContents, Installation, Usage, 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>README</title>
 </head>
 <body>
     <main>
-        <h1 id="username"></h1>
-        <h2>I live in </h2>
-        <h2>bio</h2>
-        <p></p>
+        <h1>${Title}</h1>
+        <h2>Description</h2>
+        <h2>Table of Contents</h2>
+        <h2>Installation</h2>
+        <h2>Usage</h2>
+        <h2>License</h2>
+        <h2>Contributing</h2>
+        <h2>Tests</h2>
+        <h2>Questions</h2>
+        <h2>Questions</h2>
     </main>
     <footer>
         <h4><a href="#"></a></h4>
