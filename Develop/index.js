@@ -71,15 +71,26 @@ const createHTML = ({ Title, Description, TableOfContents, Installation, Usage, 
 <body>
     <main>
         <h1>${Title}</h1>
+        <p></p>
         <h2>Description</h2>
+        <p></p>
         <h2>Table of Contents</h2>
+        <p></p>
         <h2>Installation</h2>
+        <p></p>
         <h2>Usage</h2>
+        <p></p>
         <h2>License</h2>
+        <p></p>
         <h2>Contributing</h2>
+        <p></p>
         <h2>Tests</h2>
+        <p></p>
         <h2>Questions</h2>
+        <p></p>
         <h2>Questions</h2>
+        <p></p>
+
     </main>
     <footer>
         <h4><a href="#"></a></h4>
