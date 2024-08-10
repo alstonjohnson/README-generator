@@ -60,7 +60,27 @@ const questions = () => {
     ]);
 };
 
-const createHTML = ({ Title, Description, TableOfContents, Installation, Usage, License, Contributing })
+const createHTML = ({ Title, Description, TableOfContents, Installation, Usage, License, Contributing, Tests, Questions, Questions }) =>
+    `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1 id="username"></h1>
+        <h2>I live in </h2>
+        <h2>bio</h2>
+        <p></p>
+    </main>
+    <footer>
+        <h4><a href="#"></a></h4>
+        <h4><a href="#"></a></h4>
+    </footer>
+</body>
+</html>`;
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) { }
 
