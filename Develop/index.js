@@ -60,7 +60,7 @@ const questions = () => {
     ]);
 };
 
-const createHTML = ({ Title, Description, TableOfContents, Installation, Usage, License, Contributing, Tests, Questions, Questions2 }) =>
+const generateHTML = ({ Title, Description, TableOfContents, Installation, Usage, License, Contributing, Tests, Questions, Questions2 }) =>
     `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -102,7 +102,7 @@ const createHTML = ({ Title, Description, TableOfContents, Installation, Usage, 
 // TODO: Create a function to initialize app
 const init = () => { 
     questions()
-        .then((answers) => writeFile('index.html', createHTML(answers)))
+        .then((answers) => writeFile('index.html', generateHTML(answers)))
         .then(() => console.log('index.html has been created'))
         .catch((err) => console.error(err));
 };
