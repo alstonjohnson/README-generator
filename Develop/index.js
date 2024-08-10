@@ -1,5 +1,4 @@
 // TODO: Include packages needed for this application
-const { create } = require('domain');
 const inquirer = require('inquirer');
 const { writeFile } = require('fs').promises;
 
