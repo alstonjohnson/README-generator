@@ -72,7 +72,7 @@ const generateHTML = ({ Title, Description, TableOfContents, Installation, Usage
     <main>
         <h1>${Title}</h1>
         <h2>Description</h2>
-        <p>${Descirption}</p>
+        <p>${Description}</p>
         <h2>Table of Contents</h2>
         <p>${TableOfContents}</p>
         <h2>Installation</h2>
