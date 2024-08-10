@@ -17,7 +17,7 @@ const questions = () => {
         },
         {
             type: 'input',
-            name: 'Table of Contents',
+            name: 'TableOfContents',
             message: 'Please add your table of contents',
         },
         {
@@ -43,6 +43,8 @@ const questions = () => {
 
     ]);
 };
+
+const createHTML = ({ title, description, tableofcontents, })
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) { }
 
