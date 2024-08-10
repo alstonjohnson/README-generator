@@ -40,11 +40,21 @@ const questions = () => {
             name: 'Contributing',
             message: 'Please enter the resources used or the names of any people who helped',
         },
+        {
+            type: 'input',
+            name: 'Tests',
+            message: 'Please enter any information on testing',
+        },
+        {
+            type: 'input',
+            name: 'Questions',
+            message: 'Please enter any questions',
+        },
 
     ]);
 };
 
-const createHTML = ({ title, description, tableofcontents, })
+const createHTML = ({ Title, Description, TableOfContents, Installation, Usage, License, Contributing })
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) { }
 
