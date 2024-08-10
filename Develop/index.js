@@ -31,9 +31,10 @@ const questions = () => {
             message: 'Please include any information on the usage of your project',
         },
         {
-            type: 'input',
+            type: 'list',
+            message: 'What type of license would you like to use?',
             name: 'License',
-            message: 'What licenses are you using for your project?',
+            choices: ['MIT', 'IBM', 'Mozilla'],
         },
         {
             type: 'input',
