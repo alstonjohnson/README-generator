@@ -102,8 +102,8 @@ const createHTML = ({ Title, Description, TableOfContents, Installation, Usage, 
 // TODO: Create a function to initialize app
 const init = () => { 
     questions()
-        then((answers) => writeFile('index.html', createHTML(answers))), 
-        then(() => console.log('index.html has been created'))
+        .then((answers) => writeFile('index.html', createHTML(answers)))
+        .then(() => console.log('index.html has been created'))
         .catch((err) => console.error(err));
 };
 
