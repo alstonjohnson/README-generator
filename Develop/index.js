@@ -1,4 +1,5 @@
 // TODO: Include packages needed for this application
+const { create } = require('domain');
 const inquirer = require('inquirer');
 const { writeFile } = require('fs').promises;
 
@@ -97,10 +98,15 @@ const createHTML = ({ Title, Description, TableOfContents, Installation, Usage, 
 </body>
 </html>`;
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+// function writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
-function init() { }
+const init = () => { 
+    questions()
+        then((answers) => writeFile('index.html', createHTML(answers))), 
+        then(() => console.log('index.html has been created'))
+        .catch((err) => console.error(err));
+};
 
 // Function call to initialize app
 init();
