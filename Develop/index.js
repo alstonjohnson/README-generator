@@ -7,13 +7,38 @@ const questions = () => {
     return inquirer.prompt([
         {
             type: 'input',
-            name: 'title',
+            name: 'Title',
             message: 'What is the title of your project?',
         },
         {
             type: 'input',
-            name: 'description',
+            name: 'Description',
             message: 'Please describe your project',
+        },
+        {
+            type: 'input',
+            name: 'Table of Contents',
+            message: 'Please add your table of contents',
+        },
+        {
+            type: 'input',
+            name: 'Installation',
+            message: 'Please include any information about the installation of your project',
+        },
+        {
+            type: 'input',
+            name: 'Usage',
+            message: 'Please include any information on the usage of your project',
+        },
+        {
+            type: 'input',
+            name: 'License',
+            message: 'What licenses are you using for your project?',
+        },
+        {
+            type: 'input',
+            name: 'Contributing',
+            message: 'Please enter the resources used or the names of any people who helped',
         },
 
     ]);
