@@ -60,19 +60,17 @@ const questions = () => {
     ]);
 };
 
-const generateHTML = ({ Title, Description, TableOfContents, Installation, Usage, License, Contributing, Tests, Questions, Questions2 }) =>
+const generateHTML = ({ Title, Description, TableOfContents, Installation, Usage, license, Contributing, Tests, Questions, Questions2 }) =>
     `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"/>
-
     <title>README</title>
 </head>
 <body>
     <main>
-        <table class="table table-success table-striped">
         <h1>${Title}</h1>
         <h2>Description</h2>
         <p>${Description}</p>
@@ -83,7 +81,7 @@ const generateHTML = ({ Title, Description, TableOfContents, Installation, Usage
         <h2>Usage</h2>
         <p>${Usage}</p>
         <h2>License</h2>
-        <p>${License}</p>
+        <p>${license}</p>
         <h2>Contributing</h2>
         <p>${Contributing}</p>
         <h2>Tests</h2>
@@ -92,7 +90,6 @@ const generateHTML = ({ Title, Description, TableOfContents, Installation, Usage
         <p>${Questions}</p>
         <h2>Questions</h2>
         <p>${Questions2}</p>
-        </table>
     </main>
 </body>
 </html>`;
