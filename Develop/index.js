@@ -89,12 +89,12 @@ const generateHTML = ({ Title, Description, TableOfContents, Installation, Usage
         <h2>Questions</h2>
         <p>${Questions}</p>
         <h2>Questions</h2>
-        <p>${Questions2}</p>
+        <p>Please email me at ${Questions2} for any further questions</p>
     </main>
 </body>
 </html>`;
 // TODO: Create a function to write README file
-// function writeToFile(fileName, data) { }
+
 
 // TODO: Create a function to initialize app
 const init = () => { 

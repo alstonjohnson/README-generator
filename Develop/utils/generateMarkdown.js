@@ -23,7 +23,31 @@ This project is licensed under the ${license} License. See the [LICENSE](LICENSE
 return '';
 }
 
-// TODO: Create a function to generate markdown for README
-// function generateMarkdown(data) {}
+// // TODO: Create a function to generate markdown for README
+// function generateMarkdown(data) {
+//   return `# ${data.Title}
+
+// ${renderLicenseBadge(data.license)}
+
+// ## Description
+
+// ${data.Description}
+
+// ## Table of Contents
+
+// ${data.TableOfContents}
+
+
+// ## Installation
+
+// ${data.Installation}
+
+// ## Usage
+
+// ${data.Usage}
+
+// ${renderLicenseSection(data.license)}
+// `;
+// }
 
 // module.exports = generateMarkdown;
