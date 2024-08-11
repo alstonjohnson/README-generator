@@ -66,10 +66,13 @@ const generateHTML = ({ Title, Description, TableOfContents, Installation, Usage
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"/>
+
     <title>README</title>
 </head>
 <body>
     <main>
+        <table class="table table-success table-striped">
         <h1>${Title}</h1>
         <h2>Description</h2>
         <p>${Description}</p>
@@ -89,6 +92,7 @@ const generateHTML = ({ Title, Description, TableOfContents, Installation, Usage
         <p>${Questions}</p>
         <h2>Questions</h2>
         <p>${Questions2}</p>
+        </table>
     </main>
 </body>
 </html>`;
