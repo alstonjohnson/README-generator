@@ -34,7 +34,11 @@ const questions = () => {
             type: 'list',
             message: 'What type of license would you like to use?',
             name: 'License',
-            choices: ['MIT', 'IBM', 'Mozilla'],
+            choices: [
+                "MIT", 
+                "IBM", 
+                "Mozilla"
+            ],
         },
         {
             type: 'input',
@@ -87,9 +91,9 @@ const generateHTML = ({ Title, Description, TableOfContents, Installation, Usage
         <h2>Tests</h2>
         <p>${Tests}</p>
         <h2>Questions</h2>
-        <p>${Questions}</p>
+        <a href=${Questions}></p>
         <h2>Questions</h2>
-        <p>Please email me at ${Questions2} for any further questions</p>
+        <p hrelf="${Questions2}" Please email me for any further questions></p>
     </main>
 </body>
 </html>`;
