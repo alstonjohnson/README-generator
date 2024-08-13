@@ -64,7 +64,7 @@ const questions = () => {
     ]);
 };
 
-const generateHTML = ({ Title, Description, TableOfContents, Installation, Usage, license, Contributing, Tests, Questions, Questions2 }) =>
+const generateHTML = ({ Title, Description, TableOfContents, Installation, Usage, License, Contributing, Tests, Questions, Questions2 }) =>
     `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,15 +85,15 @@ const generateHTML = ({ Title, Description, TableOfContents, Installation, Usage
         <h2>Usage</h2>
         <p>${Usage}</p>
         <h2>License</h2>
-        <p>${license}</p>
+        <p>${License}</p>
         <h2>Contributing</h2>
         <p>${Contributing}</p>
         <h2>Tests</h2>
         <p>${Tests}</p>
         <h2>Questions</h2>
-        <a href=${Questions}></p>
+        <a href=${Questions}>GitHub Link</a>
         <h2>Questions</h2>
-        <p hrelf="${Questions2}" Please email me for any further questions></p>
+        <p>Please email me for any further questions at ${Questions2}</p>
     </main>
 </body>
 </html>`;
