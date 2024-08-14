@@ -13,6 +13,7 @@ You will need to install the Iquirer in Express to use this application.
 Usage for this is to help you create a standard README.
 ![assets\image\Screenshot 2024-08-13 at 7.28.25 PM](<./Develop/assets/images/Screenshot 2024-08-13 at 7.28.25 PM.png>)
 
+Link to walkthrough video: https://www.loom.com/share/f7d2f07a4f5848488350a4f3fa8f5771
 
 ## License
 MIT
